@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="css/survey.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+  </head>
+
+  <body>
+    <div class="main-nav">
+      <ul class="nav">
+        <li class="name"><a href="index.html">Accessible Frog</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="#">Survey</a></li>
+      </ul>
+    </div>
+
+    <header class="title">
+      <h1 class="title">Accessible frog</h1>
+      <p>we make awesome music</p>
+    </header>
+
+    <main>
+      <h1 class= "heading">Survey</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/concert01.jpg" alt="people in a concert">
+          <div class="container">
+            <form class = "survey">
+              <fieldset>
+                <legend>About your music preferences</legend>
+                <label class="description">Who is your favorite band member:</label>
+                <input type="radio" name="res" value="John"> John
+                <input type="radio" name="res" value="Hazzard"> Hazzard
+                <input type="radio" name="res" value="Bob"> Bob
+                <input type="radio" name="res" value="Sally"> Sally
+
+                <label for="albums" class="description">What is your favorite album:</label>
+                <select id="albums" name="select">
+                  <option value="2">A Day Of Old</option>
+                  <option value="4">Diamond Fireworks</option>
+                  <option value="5">Enjoy Your Desire</option>
+                  <option value="3">Finding My Shadow</option>
+                  <option value="9">Heroic Forever</option>
+                  <option value="10">Midnight Fires</option>
+                  <option value="7">Music Of My Life</option>
+                  <option value="1">Party For An Angel</option>
+                  <option value="8">Song For Yesterday</option>
+                  <option value="11">Street Of The Rider</option>
+                  <option value="6">This Is For You</option>     
+                </select>
+                <div>
+                  <label class="description" for="favorite_song">What is your favorite song:</label>
+                  <textarea id="favorite_song"></textarea>
+              </div>
+            </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+      <h1 class= "heading">Newsletter</h1>
+      <div class="card">
+        <div class="flex">
+          <img class="photo" src= "img/the_band.jpg" alt="Two men playing guitar and drums">
+            <div class="container">
+              <form class="newsletter">
+                  <fieldset>
+                    <legend>Your information</legend>
+                    <p><label for="name">Name:</label><input type ="text" id="name" name="textfield"></p>
+                    <p><label for="email">Email:</label><input type ="email" id="email" name="textfield"></p>
+                    <p><label for="email-r">Retype Email: </label><input type ="email" id="email-r" name="textfield"></p>
+                    <button type="submit">Sign Up</button>
+                  </fieldset>
+              </form>
+            </div>
+        </div>
+      </div>
+    
+
+
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter"></a></li>
+        <li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube"></a></li>
+        <li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="spotify"></a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    </footer>
+  </body>
+</html>
